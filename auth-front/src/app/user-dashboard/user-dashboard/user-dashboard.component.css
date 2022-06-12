@@ -1,0 +1,33 @@
+body{
+    height: 100%;
+    min-height: 500px;
+    position: relative;
+}
+.top-pane{
+    height: 20%;
+    border-bottom: 2px solid grey;
+    display: block;
+}
+
+footer{
+    border-top: 2px solid grey;
+    display: block;
+    margin-top: 50px;
+}
+.left-pane{
+    width: 30%;
+    border-right: 2px solid grey;
+    height: 100%;
+    display: block;
+    position: absolute;
+    padding: 20px;
+}
+
+.right-pane{
+    width: 70%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    margin-left: 30%;
+    padding: 20px;
+}

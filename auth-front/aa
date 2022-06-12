@@ -1,0 +1,29 @@
+[33mcommit 8226094394040a744b7980c470b539a7b3fcdfba[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Raymond Agholor <raymondagholor0@gmail.com>
+Date:   Sat Jun 11 22:35:27 2022 -0700
+
+    committing
+
+[33mcommit 4971562d3c1e92b6489b043c9a47a0ae3ffa9509[m
+Author: Raymond Agholor <raymondagholor0@gmail.com>
+Date:   Sat Jun 11 21:19:53 2022 -0700
+
+    implemented the logout feature
+
+[33mcommit 2fd68823043ff9884199a48abec6044143793079[m
+Author: Raymond Agholor <raymondagholor0@gmail.com>
+Date:   Sat Jun 11 20:44:43 2022 -0700
+
+    implemented the verification from the front end and backend using token
+
+[33mcommit 1f1aa94c2cdc03cebdd4848241c9a65cbf102ab2[m
+Author: Raymond Agholor <raymondagholor0@gmail.com>
+Date:   Sat Jun 11 11:18:00 2022 -0700
+
+    first commit for authentication feature for vochub
+
+[33mcommit d4edc298d0b5be88bc75970b00dc8d24cf1a4586[m
+Author: Raymond Agholor <raymondagholor0@gmail.com>
+Date:   Thu Jun 9 19:20:31 2022 -0700
+
+    initial commit

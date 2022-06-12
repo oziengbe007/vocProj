@@ -1,0 +1,36 @@
+<p>App works</p>
+<form [formGroup]="registerUserData" (ngsubmit)="registerUser()">
+{{message}}
+    <div class="mb-3">
+        <label for="uname" class="form-label">username</label>
+        <input formControlName= "username" name="username" type="text" class="form-control" id="uname">
+    </div>
+    <div class="mb-3">
+        <label for="fname" class="form-label">First Name</label> 
+        <input formControlName= "firstName" name="firstName" type="text" class="form-control" id="fname">
+    </div>
+    <div class="mb-3">
+        <label for="lname" class="form-label">Last Name</label>
+        <input formControlName= "lastName" name="lastName" type="text" class="form-control" id="lname">
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input formControlName= "email" name="email" type="email" class="form-control" id="email">
+    </div>
+
+    <div class="mb-3">
+        <label for="pword" class="form-label">Password</label>
+        <input formControlName="password" name="password"type="password" class="form-control" id="pword">
+    </div>
+    <div class="mb-3">
+        <label for="address" class="form-label">Address</label>
+        <input formControlName= "address" name= "address" type="text" class="form-control" id="address">
+    </div>
+    <div class="mb-3">
+        <label for="phone" class="form-label">Phone</label>
+        <input formControlName= "phone" name="phone"type="text" class="form-control" id="phone">
+    </div>
+    <button (click) = "registerUser()" type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  
+ 
