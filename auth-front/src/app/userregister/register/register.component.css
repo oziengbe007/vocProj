@@ -20,7 +20,7 @@ body{
 }
 
 .registration_form{
-	background: #545871;
+	background: #0A2558;
 	padding: 25px;
 	border-radius: 5px;
 	width: 400px;
@@ -124,3 +124,4 @@ body{
 .form_wrap .submit_btn:hover{
 	background: #ffd5d2;
 }
+

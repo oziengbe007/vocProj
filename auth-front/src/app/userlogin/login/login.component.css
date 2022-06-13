@@ -10,4 +10,14 @@ form{
 	padding: 25px;
 	border-radius: 5px;
 	width: 400px;
+    margin: 150px auto;
+}
+
+.login-header{
+    color: #ebd0ce;
+    text-align: center;
+}
+
+label{
+    color: #9597a6;
 }
