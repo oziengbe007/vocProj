@@ -5,6 +5,7 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard/user-das
 import { LoginComponent } from './userlogin/login/login.component';
 import { RegisterComponent } from './userregister/register/register.component';
 import { AuthGuard } from './auth.guard';
+import{UserProfileComponent} from './user-profile/user-profile/user-profile.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,11 @@ const routes: Routes = [
   {
     path: "user-dashboard",
     component: UserDashboardComponent,
+    canActivate : [AuthGuard]
+  },
+  {
+    path: "user-profile",
+    component: UserProfileComponent,
     canActivate : [AuthGuard]
   }
 ];

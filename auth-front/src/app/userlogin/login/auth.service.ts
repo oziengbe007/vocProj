@@ -7,10 +7,14 @@ import { Router } from '@angular/router';
 export class AuthService {
 
   private _loginUrl="http://localhost:4000/api/login-user";
+  private _courses = "http://localhost:4000/api/courses";
   constructor(private http: HttpClient, private _router : Router) { }
 
   registerUser(user: any){
    return this.http.post<any>(this._loginUrl, user)
+  }
+  getCourses(){
+    return this.http.get<any>(this._courses);
   }
   loggedIn(){
     return !!localStorage.getItem('token')
@@ -22,4 +26,5 @@ export class AuthService {
     localStorage.removeItem('token');
     this._router.navigate(['/']);
   }
+
 }

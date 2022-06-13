@@ -1,4 +1,26 @@
-.navbar-nav a{
-    margin-right: 10px;
 
+nav {
+    display: block;
+    border-bottom: 2px solid black;
+    background-color: goldenrod;
+}
+
+.nav-bar-nav{
+    position: relative;
+    width: 100%;
+}
+.navbar-nav a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    padding: 1rem;
+}
+.navbar-nav{
+    display: block;
+    width: 20%;
+    position: relative;
+}
+
+.logout-div{
+    float: right;
 }

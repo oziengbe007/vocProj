@@ -1,6 +1,6 @@
-<p>App page</p>
+<!--<p>App page</p> -->
 
-<nav class="navbar navbar-expand-lg">
+<nav *ngIf="!_authService.loggedIn()" class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Vochub</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,10 +8,13 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-            <a routerLink="/" aria-current="page" routerLinkActive="active">Home</a>
-            <a routerLink="/register" *ngIf="!_authService.loggedIn()" routerLinkActive="active">Register</a>
-            <a routerLink="login" *ngIf="!_authService.loggedIn()" href="#">Login</a>
-            <a routerLink="/" *ngIf="_authService.loggedIn()" (onclick) = "_authService.logoutUser()">Logout</a>          
+            <a routerLink="/" *ngIf="!_authService.loggedIn()" aria-current="page" routerLinkActive="active">Home</a>
+            <a routerLink="/register" *ngIf="_authService.loggedIn()" routerLinkActive="active">Register</a>
+            <a routerLink="login" *ngIf="_authService.loggedIn()" href="#">Login</a>
+            <div class="logout-div">
+              <a routerLink="/" *ngIf="!_authService.loggedIn()" (onclick) = "_authService.logoutUser()">Logout</a>
+            </div>
+                      
         </div>
       </div>
     </div>

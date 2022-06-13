@@ -1,5 +1,5 @@
-<p>App works</p>
-<form [formGroup]="registerUserData" (ngsubmit)="registerUser()">
+
+<!-- <form [formGroup]="registerUserData" (ngsubmit)="registerUser()">
 {{message}}
     <div class="mb-3">
         <label for="uname" class="form-label">username</label>
@@ -31,6 +31,61 @@
         <input formControlName= "phone" name="phone"type="text" class="form-control" id="phone">
     </div>
     <button (click) = "registerUser()" type="submit" class="btn btn-primary">Submit</button>
-  </form>
+  </form> -->
   
- 
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+  </head>
+  <body>
+      
+  <div class="wrapper">
+      <div class="registration_form">
+          <div class="title">
+              Registration Form
+          </div>
+  
+          <form [formGroup]="registerUserData" (ngsubmit)="registerUser()">
+              <div class="form_wrap">
+                <div class="input_wrap">
+                    <label for="country">Username</label>
+                    <input formControlName= "username" name="username" type="text" class="form-control" id="uname">
+                </div>
+                  <div class="input_grp">
+                    
+                      <div class="input_wrap">
+                          <label for="fname">FirstName</label>
+                          <input formControlName= "firstName" name="firstName" type="text" class="form-control" id="fname">
+                      </div>
+                      <div class="input_wrap">
+                          <label for="lname">LastName</label>
+                          <input formControlName= "lastName" name="lastName" type="text" class="form-control" id="lname">
+                      </div>
+                  </div>
+                  <div class="input_wrap">
+                    <label for="email">Password</label>
+                    <input formControlName="password" name="password"type="password" class="form-control" id="pword">
+                </div>
+                  <div class="input_wrap">
+                      <label for="email">Email Address</label>
+                      <input formControlName= "email" name="email" type="email" class="form-control" id="email">
+                  </div>
+                  <div class="input_wrap">
+                    <label for="email">Phone Number</label>
+                    <input formControlName= "phone" name="phone"type="text" class="form-control" id="phone">
+                </div>
+                <div class="input_wrap">
+                    <label for="email">Address</label>
+                    <input formControlName= "address" name= "address" type="text" class="form-control" id="address">
+                </div>
+                  <div class="input_wrap">
+                      <input type="submit" (click) = "registerUser()" value="Register Now" class="submit_btn">
+                  </div>
+              </div>
+          </form>
+      </div>
+  </div>
+  
+  </body>
+  </html>

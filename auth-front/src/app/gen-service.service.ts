@@ -13,6 +13,10 @@ export class GenServiceService {
   getCourses(courses : any){
     return this._http.get<any>(this._registerUrl, courses);
   }
+
+  // getUser(id : number){
+  //   return this._http.get<any>(this._registerUrl, id);
+  // }
 }
 
 

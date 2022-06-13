@@ -1,7 +1,7 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import  {DashboardService} from './dashboard.service';
 import { Router } from '@angular/router';
+import { AuthService } from '../../userlogin/login/auth.service';
 @Component({
   selector: 'app-user-dashboard',
   templateUrl: './user-dashboard.component.html',
@@ -11,10 +11,10 @@ export class UserDashboardComponent implements OnInit {
   courses = {};
   
   
-  constructor(private _dashboardService: DashboardService, private _router : Router) { }
+  constructor(public _authService: AuthService, private _router : Router) { }
 
   ngOnInit(): void {
-    this._dashboardService.getCourses().subscribe(courses => {
+    this._authService.getCourses().subscribe(courses => {
       this.courses= courses,
         (err: {status: number; }) =>{
         if(err instanceof HttpErrorResponse){

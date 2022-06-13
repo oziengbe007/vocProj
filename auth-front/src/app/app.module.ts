@@ -18,6 +18,8 @@ import {AuthInterceptor} from './token-interceptor.service';
 import { GenServiceService } from './gen-service.service';
 import { CoursesComponent } from './courses/courses/courses.component';
 import {DashboardService} from './user-dashboard/user-dashboard/dashboard.service';
+import { UserProfileComponent } from './user-profile/user-profile/user-profile.component';
+import { UserAdminPanelComponent } from './user-admin-panel/user-admin-panel/user-admin-panel.component';
 
 
 @NgModule({
@@ -28,6 +30,8 @@ import {DashboardService} from './user-dashboard/user-dashboard/dashboard.servic
     LogoutComponent,
     UserDashboardComponent,
     CoursesComponent,
+    UserProfileComponent,
+    UserAdminPanelComponent,
   ],
   imports: [
     BrowserModule,
