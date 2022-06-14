@@ -1,6 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup} from '@angular/forms';
+import { Router } from '@angular/router';
 import{ AuthRegisterService } from './auth-register.service'
 import{HttpErrorResponse} from '@angular/common/http';
 
@@ -14,7 +15,7 @@ export class RegisterComponent implements OnInit {
 
   public message = {};
   
-  constructor(private _auth : AuthRegisterService) { }
+  constructor(private _auth : AuthRegisterService, private _router:Router) { }
 
   ngOnInit(): void {
   }
@@ -31,11 +32,12 @@ export class RegisterComponent implements OnInit {
   registerUser(){
     this._auth.registerUser(this.registerUserData.value)
     .subscribe(data => {
-      if(data.status===400){
+      if(data.status===404){
         this.message= data.error;
       }else{
         localStorage.setItem('token', data.token)
-        console.log(data)
+        this._router.navigate(['/login']);
+        this.message = "Successfully regiestered"
       }
       
     })

@@ -1,43 +1,43 @@
-body{
-    margin-top: 20px;
-    background-color: lightgray;
+body {
+    background: #67B26F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #081D45, #ebd0ce);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #081D45, #ebd0ce); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 55px;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    margin-top: 50px;
 }
 
-.main{
-    padding: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.topbar{
-    background-color: teal;
-    overflow: hidden;
-}
-.topbar a{
-    float: right;
-    color: whitesmoke;
-    text-align: center;
-    padding: 20px 26px;
-    text-decoration:none;
-    font-size: 26px;
-}
-.sidebar{
-    background-color: #333;
-    color: white;
-    height: 100%;
+.student-profile .card {
+    border-radius: 10px;
 }
 
-.sidebar a{
-    margin-left:10px;
-    display:block;
-    color:white;
-    padding-bottom: 10px;
-    font-size: 30px;
-    text-decoration: none;
+.student-profile .card .card-header .profile_img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px auto;
+    border: 10px solid #ccc;
+    border-radius: 50%;
 }
-.card{
-    position: relative;
-    display: flex;
-    flex-direction: column;
+
+.student-profile .card h3 {
+    font-size: 20px;
+    font-weight: 700;
 }
-.content{
-    background-color: whitesmoke;
+
+.student-profile .card p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.student-profile .table th,
+.student-profile .table td {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #000;
+}
+.rt-heading{
+    margin-left: 20px;
 }

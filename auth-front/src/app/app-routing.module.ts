@@ -6,6 +6,8 @@ import { LoginComponent } from './userlogin/login/login.component';
 import { RegisterComponent } from './userregister/register/register.component';
 import { AuthGuard } from './auth.guard';
 import{UserProfileComponent} from './user-profile/user-profile/user-profile.component';
+import { CoursesComponent } from './courses/courses/courses.component';
+
 
 const routes: Routes = [
   {
@@ -25,7 +27,8 @@ const routes: Routes = [
 
   {
     path: "logout",
-    component: LogoutComponent
+    component: LogoutComponent,
+    canActivate : [AuthGuard]
   },
   {
     path: "user-dashboard",
@@ -35,6 +38,11 @@ const routes: Routes = [
   {
     path: "user-profile",
     component: UserProfileComponent,
+    canActivate : [AuthGuard]
+  },
+  {
+    path: "courses",
+    component: CoursesComponent,
     canActivate : [AuthGuard]
   }
 ];

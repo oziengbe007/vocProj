@@ -37,7 +37,7 @@ import { UserAdminPanelComponent } from './user-admin-panel/user-admin-panel/use
     BrowserModule,
     AppRoutingModule,
     FormsModule,ReactiveFormsModule,
-    HttpClientModule,
+    HttpClientModule, ReactiveFormsModule
   ],
   providers: [AuthService, AuthRegisterService, AuthGuard,DashboardService,
   {

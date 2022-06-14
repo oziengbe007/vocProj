@@ -38,6 +38,7 @@ router.post("/register-user", (req, res) => {
             user = new User(userData)
             user.save((error, registeredUser) => {
             if(error){
+                res.status(200).send(error);
                 console.log("Error with posting" + error);
             }else {
                 let payload = {subject : registeredUser._id}

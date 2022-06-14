@@ -10,12 +10,15 @@
   position: fixed;
   height: 100%;
   width: 240px;
-  background: #0A2558;
+ background-color: #081D45;
   transition: all 0.5s ease;
   margin-top: 95px;
 }
 .sidebar.active{
   width: 60px;
+}
+.logo_name{
+  color: #ebd0ce;
 }
 .sidebar .logo-details{
   height: 80px;
@@ -29,7 +32,7 @@
   min-width: 60px;
   text-align: center
 }
-.sidebar .logo-details .logo_name{
+.sidebar .logo-details{
   color: #fff;
   font-size: 24px;
   font-weight: 500;
@@ -204,6 +207,7 @@ nav .profile-details i{
   font-size: 35px;
   margin-top: -6px;
   font-weight: 500;
+  margin-left: 60px;
 }
 .home-content .box .indicator{
   display: flex;

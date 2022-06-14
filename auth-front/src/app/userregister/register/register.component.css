@@ -125,3 +125,7 @@ body{
 	background: #ffd5d2;
 }
 
+.successMsg{
+	outline: 1px solid red;
+}
+

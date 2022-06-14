@@ -6,7 +6,7 @@
 } */
 
 form{
-	background: #545871;
+	background: #0A2558;
 	padding: 25px;
 	border-radius: 5px;
 	width: 400px;
@@ -20,4 +20,12 @@ form{
 
 label{
     color: #9597a6;
+}
+
+.btn {
+    background-color: #ebd0ce;
+    margin-left: 5.8rem;
+    width:150px;
+    color: black;
+    font-weight:500;
 }
